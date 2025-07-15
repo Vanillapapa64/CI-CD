@@ -2,7 +2,7 @@ name: Build succeeded
 on:
     pull_request:
         branches:
-            - master
+            -master
 jobs:
     build:
         name: Runs on NPM run build
@@ -15,5 +15,7 @@ jobs:
                 node-version: '20'
             - name: install dependencies
               run: npm install
+            - name : prisma
+              run: npm run db:generate
             - name: check buildin
               run: npm run build
