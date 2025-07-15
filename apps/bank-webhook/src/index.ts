@@ -38,7 +38,7 @@ app.post("/hdfcWebhook", async (req, res) => {
         ]);
 
         res.json({
-            message: "Captured"
+            message: "done"
         })
     } catch(e) {
         console.error(e);
