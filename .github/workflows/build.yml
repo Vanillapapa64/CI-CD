@@ -2,7 +2,7 @@ name: Build succeeded
 on:
     pull_request:
         branches:
-            -master
+            - master
 jobs:
     build:
         name: Runs on NPM run build
