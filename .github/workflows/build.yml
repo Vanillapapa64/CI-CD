@@ -16,6 +16,6 @@ jobs:
             - name: install dependencies
               run: npm install
             - name: Prisma generate
-              run: npm db:generate
+              run: npm run db:generate
             - name: check buildin
               run: npm run build
