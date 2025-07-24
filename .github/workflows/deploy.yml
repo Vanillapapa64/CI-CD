@@ -24,7 +24,7 @@ jobs:
         context: .
         file: ./docker/Dockerfile.userapp
         push: true
-        tags: 100xdevs/web-app:latest  # Replace with your Docker Hub username and repository
+        tags: navkiratsingh64/cicd:latest  # Replace with your Docker Hub username and repository
 
     - name: Verify Pushed Image
-      run: navkiratsingh64/cicd:tagname  # Replace with your Docker Hub username and repository
+      run: navkiratsingh64/cicd:latest  # Replace with your Docker Hub username and repository
