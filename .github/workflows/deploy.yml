@@ -22,7 +22,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: .
-        file: ../docker/Dockerfile.userapp
+        file: CI-CD-Pipeline/docker/Dockerfile.userapp
         push: true
         tags: 100xdevs/web-app:latest  # Replace with your Docker Hub username and repository
 
